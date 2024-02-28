@@ -20,7 +20,6 @@ function BasicExample() {
           </Nav>
           <span className='navbar-texto'>
              <div className='social-icon'>
-              <a href='#'><img src={} alt="" /> </a>
              </div>
           </span>
         </Navbar.Collapse>
