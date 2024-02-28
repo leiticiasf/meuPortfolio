@@ -1,9 +1,13 @@
-import { useState } from 'react';
-import { Navbar, Container } from "react-bootstrap";
+import { useState, useEffect  } from 'react';
+import {Navbar, Container, Nav} from 'react-bootstrap';
+import github from '../assets/img/GitHubIcon.svg';
+import  linkedin  from  '../assets/img/LinkedInIcon.svg';
+import  pinterest from '../assets/img/PinterestIcon.svg';
+import desenhoLeticia from '../assets/photos/leticiaDesenho.svg';
 
-function BasicExample() {
+export const NavBar = () => {
   const {linkAtivo, setLinkAtivo} = useState('inicio');
-  const {scrolled, setScrolled} = useState('false');
+  const {scrolled, setScrolled} = useState(false);
 
   useEffect(() => {
       const onScroll = () =>{
@@ -14,7 +18,7 @@ function BasicExample() {
                 }
               }
 
-              window.addEventListener("scroll", onscroll);
+              window.addEventListener("scroll", onScroll);
               return () => window.removeEventListener ("scroll", onScroll);
 
   }, [])
@@ -26,8 +30,12 @@ function BasicExample() {
       <Container>
 
         <Navbar.Brand href="#home">
-        <img src={''} alt="desenhoDeMim" />
+        <img src={desenhoLeticia} alt="logo" />
         </Navbar.Brand>
+
+        <Navbar.Toggle aria-controls="basic-navbar-nav">
+          <span className='navbar-toggler-icon'></span>
+        </Navbar.Toggle>
 
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
@@ -38,9 +46,9 @@ function BasicExample() {
           </Nav>
           <span className='navbar-texto'>
              <div className='social-icon'>
-              <a href='#'><img src={} alt="" /> </a>
-              <a href='#'><img src={} alt="" /> </a>
-              <a href='#'><img src={} alt="" /> </a>
+              <a href='#'><img src={github} alt="" /> </a>
+              <a href='#'><img src={linkedin} alt="" /> </a>
+              <a href='#'><img src={pinterest} alt="" /> </a>
              </div>
              <button className="Botoes" onClick={() => console.log('connect')} > 
                       <span> Conectando </span>  </button>
@@ -51,4 +59,4 @@ function BasicExample() {
   );
 }
 
-export default BasicExample;
+export default NavBar;
