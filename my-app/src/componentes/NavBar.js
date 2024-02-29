@@ -1,12 +1,12 @@
 import { useState, useEffect  } from 'react';
-import {Navbar, Container, Nav} from 'react-bootstrap';
+import {Navbar, Container, Nav, Banner} from 'react-bootstrap';
 import github from '../assets/img/GitHubIcon.svg';
 import  linkedin  from  '../assets/img/LinkedInIcon.svg';
 import  pinterest from '../assets/img/PinterestIcon.svg';
 import desenhoLeticia from '../assets/photos/leticiaDesenho.svg';
 
 export const NavBar = () => {
-  const {linkAtivo, setLinkAtivo} = useState('inicio');
+  const {linkAtivo, setLinkAtivo} = useState('home');
   const {scrolled, setScrolled} = useState(false);
 
   useEffect(() => {
@@ -39,24 +39,22 @@ export const NavBar = () => {
 
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#inicio" className={linkAtivo === "inicio" ? 'active navbar-link' : 'navbar-link'} onClick={()=> onUpdateLinkAtivo('inicio')}>Início</Nav.Link>
+            <Nav.Link href="#inicio" className={linkAtivo === "home" ? 'active navbar-link' : 'navbar-link'} onClick={()=> onUpdateLinkAtivo('home')}>Início</Nav.Link>
             <Nav.Link href="#sobreMim" className={linkAtivo === "sobreMim" ? 'active navbar-link' : 'navbar-link'}onClick={()=> onUpdateLinkAtivo('sobreMim')}>Sobre Mim</Nav.Link>
             <Nav.Link href="#projetos"className={linkAtivo === "projetos" ? 'active navbar-link' : 'navbar-link'}onClick={()=> onUpdateLinkAtivo('projetos')}>Projetos</Nav.Link>
             <Nav.Link href="#redesSociais"className={linkAtivo === "redesSociais" ? 'active navbar-link' : 'navbar-link'}onClick={()=> onUpdateLinkAtivo('redesSociais')}>Redes Sociais</Nav.Link>
           </Nav>
-          <span className='navbar-texto'>
+          <span className='navbar-text'>
              <div className='social-icon'>
               <a href='#'><img src={github} alt="" /> </a>
               <a href='#'><img src={linkedin} alt="" /> </a>
               <a href='#'><img src={pinterest} alt="" /> </a>
              </div>
-             <button className="Botoes" onClick={() => console.log('connect')} > 
-                      <span> Conectando </span>  </button>
+             <button className="vvd" onClick={() => console.log('connect')} >  <span> Conectando </span>  </button>
           </span>
         </Navbar.Collapse>
       </Container>
     </Navbar>
   );
 }
-
 export default NavBar;

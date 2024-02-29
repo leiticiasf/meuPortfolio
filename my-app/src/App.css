@@ -14,8 +14,8 @@ body{
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #282c34 ! important;
-  color: #fff ! important;
+  background-color: #121212 !important;
+  color: #fff !important;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -25,15 +25,34 @@ h1, h2, h3, h4, h5, h6{
   line-height: normal;
 }
 
-
-.App {
-  text-align: center;
+p, a, li, button, ul {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a:hover {
+  text-decoration: none;
 }
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+}
+
+@media (min-width:1700px) {
+	main .container {
+		max-width: 100%;
+		padding: 0 150px;
+	}
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -71,12 +90,12 @@ nav.bar{
   width: 100%;
   top: 0;
   z-index: 9999;
-  transition: 0.32 easein-out;
+  transition: 0.32 ease-in-out;
 }
 
 nav.navbar.scrolled{
   padding: 0px 0;
-  background-color: rgb(25, 24, 24);
+  background-color: #121212;
 }
 
 nav.navbar a.navbar-brand{
@@ -110,7 +129,7 @@ span.navbar-text {
 .social-icon a{
   width: 42px;
   height: 42px;
-  background: #282c34;
+  background: rgba(217, 217, 217, 0.1);
   display: inline-flex;
   border-radius: 50%;
   margin-right: 6px;
@@ -138,17 +157,17 @@ span.navbar-text {
 .social-icon a img{
   width: 40%;
   z-index: 1;
-  transition: 0.3a ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .social-icon a:hover img{
-  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg)
+  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg)  brightness(95%) contrast(86%);
 }
 
 .navbar-text button{
   font-weight: 700;
-  color: white;
-  border: 1px solid white;
+  color: #fff;
+  border: 1px solid #fff;
   padding: 18px 34px;
   font-size: 18px;
   margin-left: 18px;
@@ -165,7 +184,7 @@ span.navbar-text {
   width: 0%;
   height: 100%;
   position: absolute;
-  background-color: white;
+  background-color: #fff;
   left: 0;
   top: 0;
   z-index: -1;
@@ -189,7 +208,7 @@ nav.navbar .navbar-toggler:focus{
   box-shadow: none;
 }
 
-nav.navbar .navbar-toggle-icon{
+nav.navbar .navbar-toggler-icon{
   width: 24px;
   height: 17px;
   background-image: none;
@@ -203,7 +222,7 @@ nav.navbar .navbar-toggler-icon:focus{
   border-bottom: 2px solid #fff;
 }
 
-nav.navbar .navbar-toggle-icon:after,
+nav.navbar .navbar-toggler-icon:after,
 nav.navbar .navbar-toggler-icon:before{
    width: 24px;
    position:absolute;
