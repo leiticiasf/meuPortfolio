@@ -1,4 +1,4 @@
-import { Container, Row, Col} from "react-bootstrap";
+ import { Container, Row, Col} from "react-bootstrap";
 
 
 export const Projects = () => {
@@ -41,17 +41,38 @@ return(
             Eu posso tentar, mas<br/>
             Eu não sei dançar tão devagar<br/>
             Pra te acompanhar</p>
+            <Tab.Container id="projects-tabs" defaultActiveKey="first">
             <Nav variant="pills" defaultActiveKey="/home">
                 <Nav.Item>
-                    <Nav.Link eventKey="first">Active</Nav.Link>
+                    <Nav.Link eventKey="natureza">Option 1 </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link eventKey="second">Option2</Nav.Link>
+                    <Nav.Link eventKey="matematica">Option 2 </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link eventKey="third" > Disabled </Nav.Link>
+                    <Nav.Link eventKey="humanas" > Option 3 </Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Nav.Link eventKey="linguagens" > Option 3 </Nav.Link>
                 </Nav.Item>
             </Nav>
+            <Tab.Content>
+                <Tab.Pane eventKey="natureza">
+                   <Row>
+                    {
+                        projects.map((project, index) => {
+                            return(
+                                <p>{project.title }</p>
+                            )
+                        })
+                    }
+                   </Row>
+                </Tab.Pane>
+                <Tab.Pane eventKey="natureza"> eu amo roblox. eu amo mais robox. 1% do meu amor por roblox equivale ao amor de todos vocês. </Tab.Pane>
+                <Tab.Pane eventKey="humanas">wake up. put in yourself a little makeup.</Tab.Pane>
+                <Tab.Pane eventKey="linguagens">zaizaizaizzziaaaiza. memowmeomowmeowemow</Tab.Pane>
+            </Tab.Content>
+            </Tab.Container>
             </Col>
         </Row>
         </Container>
