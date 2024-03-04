@@ -6,7 +6,6 @@ import Ciber from '../assets/img/ciberseguranca.png';
 import Python from '../assets/img/python.png';
 import English from '../assets/img/ingles.png';
 import Prova from '../assets/img/prova.png';
-import background from '../assets/photos/serj.jpg';
 
 export const Skills =  () => {
     const responsive = {
@@ -34,6 +33,7 @@ export const Skills =  () => {
             <Container>
                 <Row>
                     <Col>
+                    <br></br>
                         <div className="skills-bx">
                             <h2>
                                 Skills
@@ -65,7 +65,7 @@ export const Skills =  () => {
                     </Col>
                 </Row>
             </Container>
-            <img className="background-img-left" src={background}/>
+
             </section>
       )
 }
