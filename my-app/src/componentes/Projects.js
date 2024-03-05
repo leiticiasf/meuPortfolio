@@ -1,29 +1,28 @@
- import { Container, Row, Col} from "react-bootstrap";
+ import { Container, Row, Col, Nav, Tab} from "react-bootstrap";
+ import { NaturezaCards } from "./ProjectsCards";
+ import teste from  "./gon.jpg";
 
-
-export const Projects = () => {
-    const projects = [
+export const NaturezaProjects = () => { /* Parte Natureza*/
+    const natureza = [
         {
-            title: "Blabla",
-            description: "Blelbleleb",
-            imgUrl: projImg1,
+            title: "Atividade 1",
+            description: "i somos amigos",
+            imgUrl: teste,
         },
         {
-            title: "Blabla",
-            description: "Blelbleleb",
-            imgUrl: projImg1,
+            title: "Atividade 2",
+            description: "",
         },
         {
-            title: "Blabla",
-            description: "Blelbleleb",
-            imgUrl: projImg1,
+            title: "Atividade 3",
+            description: "",
         },
         {
-            title: "Blabla",
-            description: "Blelbleleb",
-            imgUrl: projImg1,
+            title: "Atividade 4",
+            description: "",
         },    
     ];
+
 
 
 
@@ -34,43 +33,39 @@ return(
             <Col>
           
           <h2>Projetos</h2>
-          <p>E tudo que eu posso te dar<br/>
-            É solidão com vista pro mar<br/>
-            Ou outra coisa pra lembrar<br/>
-            Se você quiser, eu<br/>
-            Eu posso tentar, mas<br/>
-            Eu não sei dançar tão devagar<br/>
-            Pra te acompanhar</p>
+          <p>Jais aqui as principais atividades ocorridas ao longo do ano</p>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
-            <Nav variant="pills" defaultActiveKey="/home">
+            <Nav variant="pills" className="nav-pills mb-5 justify-content-center alignt-items-center" id="pills-tab">
                 <Nav.Item>
-                    <Nav.Link eventKey="natureza">Option 1 </Nav.Link>
+                    <Nav.Link eventKey="natureza">Natureza</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link eventKey="matematica">Option 2 </Nav.Link>
+                    <Nav.Link eventKey="matematica"> Matemática </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link eventKey="humanas" > Option 3 </Nav.Link>
+                    <Nav.Link eventKey="linguagens" > Linguagens</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link eventKey="linguagens" > Option 3 </Nav.Link>
+                    <Nav.Link eventKey="humanas" > Humanas </Nav.Link>
                 </Nav.Item>
+              
             </Nav>
             <Tab.Content>
                 <Tab.Pane eventKey="natureza">
                    <Row>
                     {
-                        projects.map((project, index) => {
+                         natureza.map((natureza, index) => {
                             return(
-                                <p>{project.title }</p>
+                               <NaturezaCards
+                                key={index}
+                                {...natureza} />
                             )
                         })
                     }
                    </Row>
                 </Tab.Pane>
-                <Tab.Pane eventKey="natureza"> eu amo roblox. eu amo mais robox. 1% do meu amor por roblox equivale ao amor de todos vocês. </Tab.Pane>
-                <Tab.Pane eventKey="humanas">wake up. put in yourself a little makeup.</Tab.Pane>
-                <Tab.Pane eventKey="linguagens">zaizaizaizzziaaaiza. memowmeomowmeowemow</Tab.Pane>
+           
+
             </Tab.Content>
             </Tab.Container>
             </Col>

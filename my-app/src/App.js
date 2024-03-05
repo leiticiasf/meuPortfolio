@@ -3,8 +3,8 @@ import './App.css';
 import {NavBar} from './componentes/NavBar';
 import {Banner} from './componentes/Banner';
 import {Skills} from './componentes/Skills';
-import {Projects} from './componentes/Projects';
-import {ProjectsCards} from './componentes/ProjectsCards';
+import {NaturezaProjects, MatematicaProjects, LinguagensProjects, HumanasProjects,} from './componentes/Projects';
+import { NaturezaCards} from './componentes/ProjectsCards';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -13,8 +13,9 @@ function App() {
     <NavBar />
     <Banner />
     <Skills />
-    <Projects />
-    <ProjectsCards  />
+    <NaturezaProjects />
+    <NaturezaCards  />
+
     </div>
   );
 }
