@@ -1,9 +1,11 @@
  import { Container, Row, Col, Nav, Tab} from "react-bootstrap";
- import { NaturezaCards } from "./ProjectsCards";
+ import { DevCards } from "./ProjectsCardsTech";
  import teste from  "./gon.jpg";
 
-export const NaturezaProjects = () => { /* Parte Natureza*/
-    const natureza = [
+
+
+export const DevProjects = () => { /* Parte Natureza*/
+    const dev = [
         {
             title: "Atividade 1",
             description: "i somos amigos",
@@ -32,33 +34,33 @@ return(
         <Row>
             <Col>
           
-          <h2>Projetos</h2>
-          <p>Jais aqui as principais atividades ocorridas ao longo do ano</p>
+          <h2>Projetos Curso Técnico</h2>
+          <p>Jais aqui as principais atividades do curso técnico ocorridas ao longo do ano</p>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
             <Nav variant="pills" className="nav-pills mb-5 justify-content-center alignt-items-center" id="pills-tab">
                 <Nav.Item>
-                    <Nav.Link eventKey="natureza">Natureza</Nav.Link>
+                    <Nav.Link eventKey="dev">Desen. de Sistemas</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link eventKey="matematica"> Matemática </Nav.Link>
+                    <Nav.Link eventKey="matematica"> Impl. e Manu. de Sistemas </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link eventKey="linguagens" > Linguagens</Nav.Link>
+                    <Nav.Link eventKey="linguagens" > Modelagem de Sistemas</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link eventKey="humanas" > Humanas </Nav.Link>
+                    <Nav.Link eventKey="humanas" > SA </Nav.Link>
                 </Nav.Item>
               
             </Nav>
             <Tab.Content>
-                <Tab.Pane eventKey="natureza">
+                <Tab.Pane eventKey="dev">
                    <Row>
                     {
-                         natureza.map((natureza, index) => {
+                         dev.map((dev, index) => {
                             return(
-                               <NaturezaCards
+                               <DevCards
                                 key={index}
-                                {...natureza} />
+                                {...dev} />
                             )
                         })
                     }
