@@ -1,26 +1,33 @@
  import { Container, Row, Col, Nav, Tab} from "react-bootstrap";
  import { NaturezaCards } from "./ProjectsCards";
- import teste from  "./gon.jpg";
+ import fotoMeme from  "../assets/naturezaImg/Memes.png";
+ import fotoOrganica from  "../assets/naturezaImg/revisaoOrganica.png";
+ import fotoAutoria from  "../assets/naturezaImg/autoria.png";
+ import fotoCircuito from  "../assets/naturezaImg/circuito.png";
+
 
 export const NaturezaProjects = () => { /* Parte Natureza*/
     const natureza = [
         {
-            title: "Atividade 1",
-            description: "i somos amigos",
-            imgUrl: teste,
+            title: "Atividade Biologia",
+            description: "Meme sobre evolucionismo.",
+            imgUrl: fotoMeme,
         },
         {
             title: "Atividade 2",
-            description: "",
+            description: "Apresentação de uma revisão sobre química orgânica.",
+            imgUrl: fotoOrganica,
         },
         {
             title: "Atividade 3",
-            description: "",
+            description: "Atividade prática de circuitos e resistores.",
+            imgUrl: fotoCircuito,
         },
         {
             title: "Atividade 4",
-            description: "",
-        },    
+            description: "Uma 'autoria' a partir da explicação \n durante a aula de Evolução e Teorias Evolucionistas.",
+            imgUrl: fotoAutoria,
+        },
     ];
 
 

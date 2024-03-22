@@ -1,6 +1,5 @@
  import { Container, Row, Col, Nav, Tab} from "react-bootstrap";
  import { DevCards } from "./ProjectsCardsTech";
- import teste from  "./gon.jpg";
 
 
 
@@ -9,7 +8,6 @@ export const DevProjects = () => { /* Parte Natureza*/
         {
             title: "Atividade 1",
             description: "i somos amigos",
-            imgUrl: teste,
         },
         {
             title: "Atividade 2",
