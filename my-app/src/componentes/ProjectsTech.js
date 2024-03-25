@@ -33,7 +33,7 @@ return(
             <Col>
           
           <h2>Projetos Curso Técnico</h2>
-          <p>Jais aqui as principais atividades do curso técnico ocorridas ao longo do ano</p>
+          <p>Jaz aqui as principais atividades do curso técnico ocorridas ao longo do ano</p>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
             <Nav variant="pills" className="nav-pills mb-5 justify-content-center alignt-items-center" id="pills-tab">
                 <Nav.Item>

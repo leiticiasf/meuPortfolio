@@ -66,7 +66,7 @@ nav.bar{
 }
 
 nav.navbar{
-  background-color: #000000;
+  background-color: #422000;
   
 }
 
@@ -79,7 +79,7 @@ nav.navbar a.navbar-brand{
 
 nav.navbar .navbar-nav .nav-link.navbar-link{
   font-weight: 400;
-  color: rgb(64, 69, 90) ! important;
+  color: rgb(255, 255, 255) ! important;
   letter-spacing: 0.8px;
   padding: 0 25px;
   font-size: 18px;
@@ -89,6 +89,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link{
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link:active{
   opacity: 1;
+  
 }
 
 span.navbar-text {
@@ -105,14 +106,14 @@ span.navbar-text {
 .social-icon a{
   width: 60px;
   height: 60px;
-  background: rgba(217, 217, 217, 0.1);
+  background: rgba(114, 42, 0, 0.452);
   display: inline-flex;
   border-radius: 50%;
   margin-right: 6px;
   align-items: center;
   justify-content: center;
   line-height: 1;
-  border: 1px solid rgb(98, 96, 110);
+  border: 1px solid rgb(0, 0, 0);
 }
 
 .social-icon a::before{
@@ -120,7 +121,7 @@ span.navbar-text {
   width: 60px;
   height: 60px;
   position: absolute;
-  background-color: rgb(83, 120, 151);
+  background-color: rgba(150, 110, 2, 0.219);
   border-radius: 50%;
   transform: scale(0);
   transition: 0.3s ease-in-out;
@@ -142,8 +143,8 @@ span.navbar-text {
 
 .navbar-text button{
   font-weight: 700;
-  color: #bedfe9;
-  border: 1px solid #fff;
+  color: #f7d77f;
+  border: 1px solid #000000;
   padding: 18px 34px;
   font-size: 18px;
   margin-left: 18px;
@@ -243,7 +244,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
 .banner{
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('./assets/photos/pinkFloyd.jpeg');
+  background-image: url('./assets/photos/fundo.gif');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -253,16 +254,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background-color: #c0e0f0;
+  background-color: #693c00;
   border: 1px solid rgba(15, 9, 9, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
   display: inline-block;
+  opacity: 0.70;
 }
 
 .banner h1{
   font-size: 65px;
-  color: rgb(95, 115, 138);
+  color: rgb(255, 224, 158);
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
@@ -300,7 +302,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
 }
 
 .banner img {
-  animation: updown 3s linear infinite;
+  animation: updown 6s linear infinite;
 }
 
 @keyframes updown{

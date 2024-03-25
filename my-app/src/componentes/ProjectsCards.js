@@ -1,6 +1,6 @@
 import { Col} from'react-bootstrap';
 
-export const NaturezaCards = ({title, description, imgUrl}) =>{
+export const Cards = ({title, description, imgUrl}) =>{
    
 
     return(
@@ -16,3 +16,4 @@ export const NaturezaCards = ({title, description, imgUrl}) =>{
 
     )
 }
+
