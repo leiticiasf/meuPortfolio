@@ -114,14 +114,14 @@ span.navbar-text {
 .social-icon a{
   width: 60px;
   height: 60px;
-  background: rgba(114, 42, 0, 0.452);
+  background: #3E606F;
   display: inline-flex;
   border-radius: 50%;
   margin-right: 6px;
   align-items: center;
   justify-content: center;
   line-height: 1;
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid rgb(105, 105, 105);
 }
 
 .social-icon a::before{
@@ -129,7 +129,7 @@ span.navbar-text {
   width: 60px;
   height: 60px;
   position: absolute;
-  background-color: rgba(150, 110, 2, 0.219);
+  background-color: #91AA9D;
   border-radius: 50%;
   transform: scale(0);
   transition: 0.3s ease-in-out;
@@ -151,7 +151,7 @@ span.navbar-text {
 
 .navbar-text button{
   font-weight: 700;
-  color: #f7d77f;
+  color: #d4f9fc;
   border: 1px solid #000000;
   padding: 18px 34px;
   font-size: 18px;
@@ -169,7 +169,7 @@ span.navbar-text {
   width: 0%;
   height: 100%;
   position: absolute;
-  background-color: #fff;
+  background-color: #ffffff;
   left: 0;
   top: 0;
   z-index: -1;
@@ -177,7 +177,7 @@ span.navbar-text {
 }
 
 .navbar-text button:hover{
-  color: #121212;
+  color: #94d4ff;
 }
 
 .navbar-text button:hover::before{
