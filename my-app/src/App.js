@@ -8,6 +8,8 @@ import { Cards} from './componentes/ProjectsCards';
 import {DevProjects} from './componentes/ProjectsTech';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { DevCards } from './componentes/ProjectsCardsTech';
+import {Ppe} from "./componentes/Ppe";
+import {Final} from "./componentes/Final";
 
 function App() {
   return (
@@ -15,11 +17,12 @@ function App() {
     <NavBar />
     <Banner />
     <Skills />
-
     <Projects />
     <Cards  />
     <DevProjects/>
     <DevCards/>
+    <Ppe/>
+    <Final/>
     </div>
   );
 }

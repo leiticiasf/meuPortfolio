@@ -14,21 +14,25 @@ export const Projects = () => { /* Parte Natureza*/
             title: "Atividade Biologia",
             description: "Meme sobre evolucionismo.",
             imgUrl: fotoMeme,
+            link: "https://www.canva.com/design/DAF-u7idW64/JRRP6Lr7weS-WB_vzXKVFQ/edit?utm_content=DAF-u7idW64&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
         },
         {
             title: "Atividade 2",
             description: "Apresentação de uma revisão sobre química orgânica.",
             imgUrl: fotoOrganica,
+            link: "https://docs.google.com/presentation/d/14Vx3aqsnkBRJZKg75W40nZ45MMyyvhsWnyX9g_DmrEs/edit?usp=classroom_web&authuser=0"
         },
         {
             title: "Atividade 3",
             description: "Atividade prática de circuitos e resistores.",
             imgUrl: fotoCircuito,
+            link: "https://docs.google.com/document/d/1CV-GYZ9_vD-cs5GbQqaRbUw4TZKUeEzgbXZwvH4eo88/edit?usp=gmail"
         },
         {
             title: "Atividade 4",
             description: "Uma 'autoria' a partir da explicação \n durante a aula de Evolução e Teorias Evolucionistas.",
-            imgUrl: fotoAutoria,
+            imgUrl: fotoAutoria, 
+            link: "https://docs.google.com/document/d/1h5dyq6SbD9ZF4406HQ0Dt7itMWpMOrHRlOweCz0A2H0/edit?usp=drive_link"
         },
     ];
     const humanas = [
@@ -40,12 +44,14 @@ export const Projects = () => { /* Parte Natureza*/
         {
             title:  "Introdução à Geopolítica",
             description: "Escolhemos um país do qual deveríamos fazer uma apresentação \n falando sobre a situação atual do país.",
-            imgUrl: fotoBandeiraMadagascar
+            imgUrl: fotoBandeiraMadagascar,
+            link: "https://docs.google.com/presentation/d/1dwZV5mdLD-fFOPZFDIsrQBRoYr9vpUWh8YdFACdEAhM/edit?usp=classroom_web&authuser=0"
         },
         {
             title: "O Imperialismo na América",
             description: "Esta atividade requereu que nós fizessémos a análise de uma determinada imagem dada durante a aula para refletirmos em sala.  ",
-            imgUrl: fotoPintura
+            imgUrl: fotoPintura,
+            link: "https://docs.google.com/document/d/1HN822HfWsRRpgmdv9IiM2XrpMgPL78rtLNoKDbVBUj0/edit?usp=classroom_web&authuser=0"
         },
         {
             title: "",
@@ -61,7 +67,7 @@ return(
             <Col>
           
           <h2>Projetos</h2>
-          <p>Jaz aqui as principais atividades ocorridas ao longo do ano</p>
+          <p>Jazem aqui as principais atividades ocorridas ao longo do ano</p>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
             <Nav variant="pills" className="nav-pills mb-5 justify-content-center alignt-items-center" id="pills-tab">
                 <Nav.Item>

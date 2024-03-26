@@ -402,7 +402,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
   background-color: transparent;
   border-radius: 4;
   padding: 20px ;
-  color: #a5a5a5;
+  color: #ffffff;
   width: 100%;
   font-size: 17px;
   letter-spacing: 3px;
@@ -432,7 +432,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
 
 .project .nav.nav-pills .nav-link.active{
   border: 1px solid rgb(8, 59, 117);
-  background-color: #4A2FBD;
+  background-color: #b9b9b9;
   letter-spacing: 7px;
 
 
