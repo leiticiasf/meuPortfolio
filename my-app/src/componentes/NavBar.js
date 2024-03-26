@@ -49,7 +49,7 @@ export const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href='#'><img src={github} alt="github" /> </a>
+              <a href='https://github.com/'><img src={github} alt="github" /> </a>
               <a href='#'><img src={linkedin} alt="linkedin" /> </a>
               <a href='#'><img src={pinterest} alt="pinterest" /> </a>
             </div>

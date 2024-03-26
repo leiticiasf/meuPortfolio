@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './assets/photos/cachorro.png';
 import './App.css';
 import {NavBar} from './componentes/NavBar';
 import {Banner} from './componentes/Banner';
