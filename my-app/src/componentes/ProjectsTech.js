@@ -2,8 +2,7 @@
  import { DevCards } from "./ProjectsCardsTech";
 
 
-
-export const DevProjects = () => { /* Parte Natureza*/
+export const DevProjects = () => { /* Parte Desenvolvimento de Sistemas*/
     const dev = [
         {
             title: "Atividade 1",

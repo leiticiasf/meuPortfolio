@@ -3,7 +3,7 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import github from '../assets/img/GitHubIcon.svg';
 import linkedin from '../assets/img/LinkedInIcon.svg';
 import pinterest from '../assets/img/PinterestIcon.svg';
-import desenhoLeticia from '../assets/photos/leticiaDesenho.svg';
+import desenhoLeticia from '../assets/photos/eu.png';
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home');
@@ -49,7 +49,7 @@ export const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href='https://github.com/'><img src={github} alt="github" /> </a>
+              <a href='https://github.com/leiticiasf'><img src={github} alt="github" /> </a>
               <a href='#'><img src={linkedin} alt="linkedin" /> </a>
               <a href='#'><img src={pinterest} alt="pinterest" /> </a>
             </div>

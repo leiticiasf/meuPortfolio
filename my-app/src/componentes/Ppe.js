@@ -1,7 +1,7 @@
 export const Ppe = () => {
     return (
             <div>
-                <h1>dada</h1>
+                <h1>PPE</h1>
             </div>
     )
 }

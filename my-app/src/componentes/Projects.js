@@ -1,4 +1,4 @@
- import { Container, Row, Col, Nav, Tab} from "react-bootstrap";
+ import { Container, Row, Col, Nav, Tab, Card} from "react-bootstrap";
  import { Cards } from "./ProjectsCards";
  import fotoMeme from  "../assets/naturezaImg/Memes.png";
  import fotoOrganica from  "../assets/naturezaImg/revisaoOrganica.png";
@@ -7,6 +7,9 @@
  import fotoFilme1917 from "../assets/humanasImg/1917.jpg";
  import fotoBandeiraMadagascar from "../assets/humanasImg/bandeira.png";
  import fotoPintura from "../assets/humanasImg/pintura.jpg";
+ import fotoPost from "../assets/linguagensImg/conto.jpg";
+ import fotoLivro from "../assets/linguagensImg/livro.jpg";
+ import fotoAv1Mtm from "../assets/matematicaImg/Mapa.png";
 
 export const Projects = () => { /* Parte Natureza*/
     const natureza = [
@@ -53,11 +56,31 @@ export const Projects = () => { /* Parte Natureza*/
             imgUrl: fotoPintura,
             link: "https://docs.google.com/document/d/1HN822HfWsRRpgmdv9IiM2XrpMgPL78rtLNoKDbVBUj0/edit?usp=classroom_web&authuser=0"
         },
-        {
-            title: "",
-            description: "",
-        },
+       
     ];
+    const linguagens = [
+    
+        {
+            title:"Atividade Simple Past - Miniconto em Inglês",
+            description:"Nessa atividade nós criamos um cartaz em formato de post do Instagram contando em forma de mini conto a história por trás da imagem que recebemos. ",
+            imgUrl: fotoPost
+        },
+        {
+            title: "Pré-Modernismo",
+            description: "Escolhemos uma obra do período pré-modernista e fizemos uma apresentação sobre ela.",
+            imgUrl: fotoLivro,
+            link: "https://www.canva.com/design/DAF-RUA3r9U/N0aYX2y9DmzXmZeRtIT3JA/edit?utm_content=DAF-RUA3r9U&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+            
+        }
+    ]
+    const matematica = [
+        {
+            title: "Arcos e Ângulos",
+            description: "Produzimos um trilha dentro do ambiente da escola utilizando os conceitos de Arcos e Âgulos contando uma história por trás desta trilha.",
+            imgUrl: fotoAv1Mtm,
+            link: "https://drive.google.com/file/d/12u5vl9DJyl-sXnJOfnOTBBAfvrZCsowM/view?usp=sharing"
+        }
+    ]
 
 
 return(
@@ -71,7 +94,7 @@ return(
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
             <Nav variant="pills" className="nav-pills mb-5 justify-content-center alignt-items-center" id="pills-tab">
                 <Nav.Item>
-                    <Nav.Link eventKey="natureza">Natureza</Nav.Link>
+                    <Nav.Link   eventKey="natureza">Natureza</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
                     <Nav.Link eventKey="matematica"> Matemática </Nav.Link>
@@ -110,13 +133,38 @@ return(
                         })
                     }
                    </Row>
-                </Tab.Pane>
+                   </Tab.Pane>
 
+                   <Tab.Pane eventKey="linguagens">
+                    <Row>
+                        {
+                            linguagens.map((linguagens, index) => {
+                                return(
+                                    <Cards 
+                                    key={index}
+                                    {...linguagens} />
+                                )
+                            })
+                        }
+                    </Row>
+                </Tab.Pane>
+                <Tab.Pane eventKey="matematica">
+                    <Row>
+                        {
+                            matematica.map((matematica, index) => {
+                                return(
+                                    <Cards 
+                                    key={index}
+                                    {...matematica} />
+                                )
+                            })
+                        }
+                    </Row>
+                </Tab.Pane>
             </Tab.Content>
             </Tab.Container>
             </Col>
         </Row>
         </Container>
     </section>
-)
-                }
+)}

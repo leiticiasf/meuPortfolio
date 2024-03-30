@@ -10,7 +10,7 @@ export const Banner = () => {
     const [isDeleting, setIsDeleting] = useState(false);
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
-    const toRotate = ["licitia", "lelelel", "citelia"];
+    const toRotate = ["Citilia", "Titicia", "Lefstilia"];
     const period = 2000;
 
     useEffect(() =>{
@@ -50,9 +50,10 @@ export const Banner = () => {
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
                        <span className="tagline">Este é o meu Portfolio</span>
-                       <h1>Olá, eu sou <span className="wrap">{text}</span></h1>
-                       <p>⁠Meu nome é Yoshikage Kira. Tenho 33 anos. Minha casa fica na parte nordeste de Morioh, onde todas as casas estão, e eu não sou casado.</p>
-                        <button onClick={() => console.log('connect')}>Let's Connect< ArrowRightCircle size={25}/></button>
+                       <h1>Olá, eu sou a <span className="wrap">{text}</span></h1>
+                       <p>Me chamo Letícia, tenho 17 anos e estou no 3° ano do Ensino Médio cursando o Técnico na instituição de ensino Escola Sesi.</p>
+                       <p> Meus hobbies envolvem desenhar, ouvir música, cozinhar (principalmente confeitaria), tocar guitarra e jogar volêi.</p>
+                        <button onClick={() => console.log('connect')}>Fale comigo!< ArrowRightCircle size={25}/></button>
                     </Col>
                         <Col xs={12} md={6} xl={5}>
                             <img src={headerImg} alt="Header img" />
